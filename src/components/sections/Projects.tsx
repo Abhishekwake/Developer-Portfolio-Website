@@ -19,22 +19,22 @@ const projects = [
     demo: "#",
     github: "#",
   },
-  {
-    title: "Brand Identity System",
-    description:
-      "Complete visual identity including logo, typography, and brand guidelines.",
-    stack: ["Figma", "After Effects", "Illustrator"],
-    demo: "#",
-    github: "#",
-  },
-  {
-    title: "Video Campaign",
-    description:
-      "30-second product launch video with motion graphics and sound design.",
-    stack: ["Premiere Pro", "After Effects", "DaVinci"],
-    demo: "#",
-    github: "#",
-  },
+  // {
+  //   title: "Brand Identity System",
+  //   description:
+  //     "Complete visual identity including logo, typography, and brand guidelines.",
+  //   stack: ["Figma", "After Effects", "Illustrator"],
+  //   demo: "#",
+  //   github: "#",
+  // },
+  // {
+  //   title: "Video Campaign",
+  //   description:
+  //     "30-second product launch video with motion graphics and sound design.",
+  //   stack: ["Premiere Pro", "After Effects", "DaVinci"],
+  //   demo: "#",
+  //   github: "#",
+  // },
 ];
 
 export const Projects = () => {

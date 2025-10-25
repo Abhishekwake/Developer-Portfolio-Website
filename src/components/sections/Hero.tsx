@@ -96,11 +96,12 @@ export const Hero = () => {
           </div>
 
           {/* Heading */}
-          <h1 className="mt-16 text-6xl md:text-8xl lg:text-9xl premium-heading leading-[0.95] animate-fade-in">
-            Websites & Apps
-            <br />
-            Developer
-          </h1>
+   <h1 className="mt-16 text-6xl md:text-8xl lg:text-9xl premium-heading leading-[0.95] animate-fade-in text-white drop-shadow-[0_4px_15px_rgba(255,255,255,0.3)]">
+  Websites & Apps
+  <br />
+  Developer
+</h1>
+
 
           {/* Subheading */}
           <p className="mt-6 text-xl md:text-2xl text-foreground/60 max-w-3xl mx-auto leading-relaxed animate-fade-in font-light">
