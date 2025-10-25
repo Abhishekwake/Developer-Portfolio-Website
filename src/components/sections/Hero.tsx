@@ -14,9 +14,20 @@ export const Hero = () => {
       id="home"
       className="min-h-screen flex items-center justify-center relative overflow-hidden"
     >
-      {/* Aurora background effect */}
-      <div className="absolute inset-0 bg-gradient-bg" />
-      <div className="aurora-glow absolute inset-0" />
+      {/* Spline 3D Background */}
+      <div className="absolute inset-0 z-0">
+        <iframe
+          src="https://my.spline.design/3dstars-KeEUOau7Sor4oifre1L8BJQz/"
+          frameBorder="0"
+          width="100%"
+          height="100%"
+          className="w-full h-full"
+          title="3D Stars Background"
+        />
+      </div>
+      
+      {/* Dark overlay for better text readability */}
+      <div className="absolute inset-0 bg-background/40 backdrop-blur-[1px] z-[1]" />
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto text-center space-y-10">
