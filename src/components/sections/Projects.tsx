@@ -9,7 +9,7 @@ const projectsData = [
     stack: ["Next", "TypeScript", "Tailwind", "Express", "MongoDB", "OpenAI API"],
     demo: "https://prompt-guru-tech.vercel.app/",
     github: "https://github.com/Abhishekwake/PromptGuru.Tech",
-    image: "/assets/PrompGuru.jpg",
+    image: "/assets/PrompGuru.jpg", // ✅ already correct
   },
   {
     title: "HomeServ",
@@ -17,7 +17,7 @@ const projectsData = [
     stack: ["React.js", "Tailwind", "Supabase","Web Sockets"],
     demo: "https://home-serv-pezfsbfsf-tushars-projects-1bbd2003.vercel.app/",
     github: "#",
-    image: "Public/assets/Home.png",
+    image: "/assets/home.png", // ✅ fixed: removed "Public/"
   },
 ];
 

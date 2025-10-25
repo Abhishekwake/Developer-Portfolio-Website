@@ -7,31 +7,29 @@ const blogPosts = [
   {
     id: "design-systems-2024",
     title: "Master Prompt Engineering in 10 Minutes",
-    excerpt:
-      "Prompt engineering is a must-have skill in tech. Developers, marketers, and AI enthusiasts can use it to get better, precise AI outputs. In just 10 minutes, you can learn the basics and start crafting effective prompts.",
+    excerpt: "Prompt engineering is a must-have skill in tech. Developers, marketers, and AI enthusiasts can use it to get better, precise AI outputs. In just 10 minutes, you can learn the basics and start crafting effective prompts.",
     date: "Mar 15, 2025",
     readTime: "8 min read",
-    image: "public/blogs/blog1.png", // 👈 Add your image here
+    image: "/blogs/blog1.png", // ✅ fixed
   },
   {
     id: "react-performance",
     title: "Start Using Notion from Now",
-    excerpt:
-      "Notion is more than just a note-taking app — it’s your personal productivity hub that helps you organize your ideas, projects, and goals in one place.",
-    date: "Juky 12, 2025",
+    excerpt: "Notion is more than just a note-taking app — it’s your personal productivity hub that helps you organize your ideas, projects, and goals in one place.",
+    date: "July 12, 2025",
     readTime: "7 min read",
-    image: "public/blogs/blog2.png",
+    image: "/blogs/blog2.png", // ✅ fixed
   },
   {
     id: "video-marketing",
     title: "Automate Inventory Management with n8n and OpenAI API.",
-    excerpt:
-      "n8n is a powerful workflow automation tool that lets you connect apps, APIs, and automate tasks — no code required.",
+    excerpt: "n8n is a powerful workflow automation tool that lets you connect apps, APIs, and automate tasks — no code required.",
     date: "Aug 28, 2025",
     readTime: "6 min read",
-    image: "/public/blogs/blog3.png",
+    image: "/blogs/blog3.png", // ✅ fixed
   },
 ];
+
 
 export const Blog = () => {
   const sectionRef = useRef<HTMLElement>(null);

@@ -98,7 +98,7 @@ export const About = () => {
           <div className="md:w-1/2 flex justify-center scroll-fade-in">
             <div className="rounded-xl overflow-hidden border-4 border-primary shadow-2xl w-[404px] h-[390px] md:w-[544px] md:h-[588px] animate-float">
               <img 
-                src="public/assets/abhihyderabad.jpg" 
+                src="/assets/AbhiHyderabad.jpg" 
                 alt="Abhishek Wake" 
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105" 
               />
