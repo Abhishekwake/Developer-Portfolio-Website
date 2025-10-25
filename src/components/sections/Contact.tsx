@@ -15,7 +15,7 @@ const socialLinks = [
 export const Contact = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
-  const emailAddress = "your@email.com";
+  const emailAddress = "abhishekwake111@gmail.com";
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -47,11 +47,11 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" ref={sectionRef} className="relative overflow-hidden py-28">
+    <section id="contact" ref={sectionRef} className="relative overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           {/* Heading */}
-          <div className="text-center mb-20 scroll-fade-in">
+          <div className="text-center mb-7 scroll-fade-in">
             <h2 className="text-6xl md:text-7xl premium-heading font-bold mb-6 bg-gradient-to-r from-white via-[#a1a1aa] to-white bg-clip-text text-transparent">
               Let’s Connect in Style ✦
             </h2>
@@ -61,8 +61,8 @@ export const Contact = () => {
           </div>
 
           {/* Contact Card */}
-          <div className="glass-panel scroll-fade-in p-10 rounded-3xl border border-white/10 shadow-[0_0_40px_rgba(255,255,255,0.05)] backdrop-blur-3xl bg-gradient-to-br from-white/5 via-white/10 to-white/5 hover:shadow-[0_0_60px_rgba(255,255,255,0.1)] transition-all duration-500">
-            <form onSubmit={handleSubmit} className="space-y-6">
+          <div className="glass-panel scroll-fade-in p-10 rounded-3xl border border-white/10 shadow-[0_0_40px_rgba(255,255,255,0.05)] backdrop-blur-3xl bg-gradient-to-br from-white/5.4 via-white/10 to-white/5 hover:shadow-[0_0_60px_rgba(255,255,255,0.1)] transition-all duration-500">
+            {/* <form onSubmit={handleSubmit} className="space-y-6">
               <Input
                 placeholder="Your Name"
                 value={formData.name}
@@ -85,13 +85,13 @@ export const Contact = () => {
                 required
                 rows={6}
                 className="bg-transparent border border-white/20 text-white placeholder:text-white/40 focus:border-primary resize-none"
-              />
+              /> */}
 
-              <Button type="submit" size="lg" className="glass-button w-full group bg-white/10 backdrop-blur-md hover:bg-white/20 transition-all duration-300">
+              {/* <Button type="submit" size="lg" className="glass-button w-full group bg-white/10 backdrop-blur-md hover:bg-white/20 transition-all duration-300">
                 <Send className="mr-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 Send Message
               </Button>
-            </form>
+            </form> */}
 
             {/* Quick Actions */}
             <div className="mt-10 grid sm:grid-cols-2 md:grid-cols-4 gap-4 text-center">
@@ -103,13 +103,13 @@ export const Contact = () => {
                 <Copy className="w-5 h-5 mr-2" /> Copy Email
               </Button>
 
-              <a href="https://calendly.com/yourusername" target="_blank" rel="noopener noreferrer">
+              <a href="https://calendly.com/abhishekwake222" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" className="glass-button bg-white/10 hover:bg-white/20 w-full">
                   <Calendar className="w-5 h-5 mr-2" /> Schedule Meet
                 </Button>
               </a>
 
-              <a href="https://wa.me/yourwhatsappnumber" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/918080127679" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" className="glass-button bg-white/10 hover:bg-white/20 w-full">
                   <MessageCircle className="w-5 h-5 mr-2" /> WhatsApp Me
                 </Button>

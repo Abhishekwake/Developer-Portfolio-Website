@@ -6,7 +6,7 @@ import { Projects } from "@/components/sections/Projects";
 // import { Testimonials } from "@/components/sections/Testimonials";
 import { Blog } from "@/components/sections/Blog";
 import { Contact } from "@/components/sections/Contact";
-import { Footer } from "@/components/Footer";
+// import { Footer } from "@/components/Footer";
 
 
 const Index = () => {
@@ -20,7 +20,7 @@ const Index = () => {
       {/* <Testimonials /> */}
       <Blog />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
