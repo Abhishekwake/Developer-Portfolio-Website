@@ -14,41 +14,39 @@ export const Hero = () => {
       id="home"
       className="min-h-screen flex items-center justify-center relative overflow-hidden"
     >
-      {/* Animated background gradient */}
+      {/* Aurora background effect */}
       <div className="absolute inset-0 bg-gradient-bg" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/20 via-transparent to-transparent animate-glow-pulse" />
+      <div className="aurora-glow absolute inset-0" />
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-5xl mx-auto text-center space-y-8">
+        <div className="max-w-6xl mx-auto text-center space-y-10">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 glass-panel px-4 py-2 animate-fade-in">
+          <div className="inline-flex items-center gap-2 glass-panel px-5 py-2.5 animate-fade-in">
             <Sparkles className="w-4 h-4 text-accent" />
-            <span className="text-sm font-medium text-foreground/80">
+            <span className="text-sm font-medium text-foreground/90">
               Available for new projects
             </span>
           </div>
 
           {/* Main heading */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-tight animate-fade-in">
-            <span className="glow-text">Design.</span>
+          <h1 className="text-6xl md:text-8xl lg:text-9xl premium-heading leading-[0.95] animate-fade-in">
+            Design. Develop.
             <br />
-            <span className="glow-text">Develop.</span>
-            <br />
-            <span className="glow-text">Dominate.</span>
+            Dominate.
           </h1>
 
           {/* Subtext */}
-          <p className="text-lg md:text-xl text-foreground/70 max-w-2xl mx-auto leading-relaxed animate-fade-in">
+          <p className="text-xl md:text-2xl text-foreground/60 max-w-3xl mx-auto leading-relaxed animate-fade-in font-light">
             I help startups and creators build world-class websites, apps, and
             brands that scale.
           </p>
 
           {/* CTA Button */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in pt-4">
             <Button
               size="lg"
               onClick={scrollToContact}
-              className="glass-button text-base font-medium px-8 py-6 group"
+              className="glass-button text-base font-semibold px-10 py-7 group text-foreground"
             >
               Let's Build Together
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -56,13 +54,13 @@ export const Hero = () => {
           </div>
 
           {/* Mockup preview */}
-          <div className="mt-16 animate-fade-in">
-            <div className="glass-panel p-4 shadow-card max-w-4xl mx-auto">
-              <div className="aspect-video bg-gradient-primary rounded-lg flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjA1IiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-30" />
+          <div className="mt-20 animate-fade-in">
+            <div className="glass-panel p-6 max-w-5xl mx-auto">
+              <div className="aspect-video bg-gradient-primary rounded-2xl flex items-center justify-center relative overflow-hidden">
+                <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjA1IiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-20" />
                 <div className="relative z-10 text-center">
-                  <Sparkles className="w-16 h-16 mx-auto mb-4 text-accent animate-glow-pulse" />
-                  <p className="text-foreground/60 text-sm">Featured Work Showcase</p>
+                  <Sparkles className="w-20 h-20 mx-auto mb-4 text-accent/80 animate-glow-pulse" />
+                  <p className="text-foreground/50 text-sm font-medium">Featured Work Showcase</p>
                 </div>
               </div>
             </div>

@@ -66,11 +66,11 @@ export const Projects = () => {
     >
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16 scroll-fade-in">
-            <h2 className="text-4xl md:text-6xl font-bold mb-6 glow-text">
+          <div className="text-center mb-20 scroll-fade-in">
+            <h2 className="text-5xl md:text-7xl premium-heading mb-8">
               Featured Work
             </h2>
-            <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
+            <p className="text-xl text-foreground/60 max-w-3xl mx-auto font-light">
               A selection of projects that showcase my design, development, and
               storytelling capabilities.
             </p>
@@ -80,7 +80,7 @@ export const Projects = () => {
             {projects.map((project, index) => (
               <div
                 key={project.title}
-                className="glass-panel p-6 group hover:border-primary/50 transition-all duration-300 scroll-fade-in"
+                className="glass-panel p-8 group hover:border-primary/50 transition-all duration-500 scroll-fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 {/* Project Thumbnail */}

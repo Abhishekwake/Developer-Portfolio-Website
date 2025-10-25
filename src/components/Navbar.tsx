@@ -40,7 +40,7 @@ export const Navbar = () => {
         <div className="container mx-auto px-6 flex items-center justify-between">
           <a
             href="#home"
-            className="text-2xl font-bold glow-text tracking-tight"
+            className="text-2xl font-bold text-foreground tracking-tight"
             onClick={(e) => {
               e.preventDefault();
               scrollToSection("#home");

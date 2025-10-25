@@ -96,10 +96,10 @@ const BlogPost = () => {
           </span>
         </div>
 
-        {/* Title */}
-        <h1 className="text-4xl md:text-5xl font-bold mb-8 glow-text">
-          {post.title}
-        </h1>
+          {/* Title */}
+          <h1 className="text-4xl md:text-6xl premium-heading mb-8">
+            {post.title}
+          </h1>
 
         {/* Featured Image */}
         <div className="aspect-video glass-panel p-4 mb-12">

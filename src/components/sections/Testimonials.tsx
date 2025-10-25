@@ -54,11 +54,11 @@ export const Testimonials = () => {
     >
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16 scroll-fade-in">
-            <h2 className="text-4xl md:text-6xl font-bold mb-6 glow-text">
+          <div className="text-center mb-20 scroll-fade-in">
+            <h2 className="text-5xl md:text-7xl premium-heading mb-8">
               Client Success Stories
             </h2>
-            <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
+            <p className="text-xl text-foreground/60 max-w-3xl mx-auto font-light">
               Don't just take my word for it — here's what clients say about
               working together.
             </p>

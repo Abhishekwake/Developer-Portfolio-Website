@@ -52,17 +52,17 @@ export const Contact = () => {
     >
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16 scroll-fade-in">
-            <h2 className="text-4xl md:text-6xl font-bold mb-6 glow-text">
+          <div className="text-center mb-20 scroll-fade-in">
+            <h2 className="text-5xl md:text-7xl premium-heading mb-8">
               Let's Connect
             </h2>
-            <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
+            <p className="text-xl text-foreground/60 max-w-3xl mx-auto font-light">
               Have an idea, project, or collaboration in mind? I'd love to hear
               from you.
             </p>
           </div>
 
-          <div className="glass-panel p-8 scroll-fade-in">
+          <div className="glass-panel p-10 scroll-fade-in">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <Input

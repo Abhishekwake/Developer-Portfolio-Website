@@ -57,11 +57,11 @@ export const Services = () => {
     >
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16 scroll-fade-in">
-            <h2 className="text-4xl md:text-6xl font-bold mb-6 glow-text">
+          <div className="text-center mb-20 scroll-fade-in">
+            <h2 className="text-5xl md:text-7xl premium-heading mb-8">
               What I Do
             </h2>
-            <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
+            <p className="text-xl text-foreground/60 max-w-3xl mx-auto font-light">
               From concept to launch, I provide end-to-end solutions that bring
               your vision to life.
             </p>
@@ -71,9 +71,9 @@ export const Services = () => {
             {services.map((service, index) => {
               const Icon = service.icon;
               return (
-                <div
+              <div
                   key={service.title}
-                  className="glass-panel p-8 group hover:border-primary/50 transition-all duration-300 scroll-fade-in"
+                  className="glass-panel p-10 group hover:border-primary/50 transition-all duration-500 scroll-fade-in"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <Icon className="w-10 h-10 mb-4 text-accent group-hover:scale-110 transition-transform" />

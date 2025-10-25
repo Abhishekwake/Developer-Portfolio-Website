@@ -29,7 +29,7 @@ export const Footer = () => {
                 e.preventDefault();
                 scrollToSection("#home");
               }}
-              className="text-2xl font-bold glow-text"
+              className="text-2xl font-bold text-foreground"
             >
               Abhishek Wake
             </a>
