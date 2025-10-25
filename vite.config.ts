@@ -15,4 +15,12 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  optimizeDeps: {
+    include: ['gsap'] // Add this line to optimize GSAP
+  },
+  build: {
+    rollupOptions: {
+      external: [] // Ensure GSAP is not externalized
+    }
+  }
 }));
