@@ -16,11 +16,11 @@ export default defineConfig(({ mode }) => ({
     },
   },
   optimizeDeps: {
-    include: ['gsap'] // Add this line to optimize GSAP
+    include: ['gsap'], // Pre-bundle GSAP
   },
   build: {
     rollupOptions: {
-      external: [] // Ensure GSAP is not externalized
+      // Don't externalize GSAP; leave empty or remove
     }
   }
 }));
