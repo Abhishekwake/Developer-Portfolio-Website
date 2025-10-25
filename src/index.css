@@ -60,14 +60,6 @@ All colors MUST be HSL.
   .glass-panel {
     @apply backdrop-blur-2xl bg-glass-bg/60 border border-glass-border/30 rounded-3xl shadow-card;
   }
-  .glass-nav {
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
-  background-color: rgba(17, 25, 40, 0.37);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-}
-
   
   .glass-button {
     @apply backdrop-blur-xl bg-primary/10 border border-primary/30 rounded-2xl;
