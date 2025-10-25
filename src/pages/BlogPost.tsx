@@ -6,44 +6,54 @@ const blogContent: Record<string, {
   title: string;
   date: string;
   readTime: string;
+  image?: string; // optional featured image
   content: string[];
 }> = {
   "design-systems-2024": {
-    title: "Building Scalable Design Systems in 2024",
+    title: "Master Prompt Engineering in 10 Minutes",
     date: "Mar 15, 2024",
     readTime: "8 min read",
+    image: "/public/blogs/blog1.png",
     content: [
-      "Design systems have become the backbone of modern product development. They ensure consistency, accelerate workflows, and empower teams to build better products faster.",
-      "In this article, we'll explore the key principles of building a design system that scales with your organization.",
-      "First, start with foundations. Define your color palette, typography scale, spacing system, and elevation tokens. These are the atoms of your design language.",
-      "Next, build component libraries. Create reusable UI components that implement your design tokens. Document their usage, variations, and best practices.",
-      "Finally, establish governance. Create guidelines for how the design system evolves, who can contribute, and how changes are reviewed and approved.",
+      "Prompt engineering is a must-have skill in today’s tech world. It helps developers, marketers, and AI enthusiasts get precise and effective AI outputs.",
+      "In this article, we'll explore the key steps to master prompt engineering quickly and easily.",
+      "First, be clear and specific. Give AI precise instructions and context, like explaining technical concepts in simple language for beginners.",
+      "Next, provide examples. Show the AI the style or format you want, so it can mimic your tone and structure accurately.",
+      "Then, ask for step-by-step explanations. For complex topics, instruct AI to break down answers in a structured, easy-to-follow manner.",
+      "Use role-playing for more aKccuracy. Assign AI a role, like senior engineer or mentor, to get expert-level guidance tailored to your audience.",
+      "Finally, iterate and experiment. Tweak prompts for tone, length, and context to refine outputs and achieve better results every time."
     ],
   },
   "react-performance": {
-    title: "React Performance: Beyond the Basics",
+    title: "Start Using Notion from Now",
     date: "Mar 8, 2024",
-    readTime: "12 min read",
+    readTime: "8 min read",
+    image: "/public/blogs/blog2.png",
     content: [
-      "React performance optimization is crucial for delivering fast, responsive user experiences. Let's dive into advanced techniques that go beyond the standard React.memo() and useCallback().",
-      "Code splitting is your first line of defense. Use dynamic imports and React.lazy() to split your bundle into smaller chunks that load on demand.",
-      "Virtual scrolling can dramatically improve performance when rendering large lists. Libraries like react-window make this easy to implement.",
-      "Consider using web workers for heavy computational tasks. This keeps your main thread free and your UI responsive.",
-      "Monitor your app's performance with React DevTools Profiler. Measure before and after optimizations to ensure they're effective.",
-    ],
+  "Notion is more than just a note-taking app — it’s your personal productivity hub that helps you organize your ideas, projects, and goals in one place.",
+  "In this article, you'll discover why you should start using Notion today and how it can completely change the way you work and think.",
+  "First, Notion is an all-in-one workspace. You can manage your notes, to-do lists, projects, and even build dashboards without switching between different apps.",
+  "Next, it lets you create your own system. Whether you’re a student, developer, or creator, you can design pages and templates that fit your workflow perfectly.",
+  "Then, it helps you stay consistent. With Notion’s templates, reminders, and linked databases, you can track your habits, goals, and progress easily.",
+  "Use it to build your second brain. Store your ideas, bookmarks, notes, and plans in a structured way so you never lose important thoughts again.",
+  "Finally, start small and grow. Begin with a simple daily planner or task list, and as you get comfortable, expand into full systems for productivity, learning, or creativity."
+]
   },
   "video-marketing": {
-    title: "The Art of Video Marketing in the AI Era",
-    date: "Feb 28, 2024",
-    readTime: "6 min read",
+    title: "Automate Inventory Management with n8n and OpenAI API",
+    date: "Feb 28, 2025",
+    readTime: "10 min read",
+    image: "/public/blogs/blog3.png", // optional featured image
     content: [
-      "Video marketing has evolved dramatically with AI tools, but the fundamentals of storytelling remain unchanged. Let's explore how to create compelling video content in 2024.",
-      "Start with a strong hook. You have 3 seconds to capture attention. Make every frame count.",
-      "Tell stories, not features. People connect with narratives and emotions, not technical specifications.",
-      "Optimize for platforms. What works on YouTube might not work on TikTok. Understand each platform's unique audience and format.",
-      "Use AI tools wisely. They can accelerate production, but human creativity and strategic thinking are irreplaceable.",
-      "Measure and iterate. Track engagement metrics, learn from what works, and continuously refine your approach.",
-    ],
+  "n8n is a powerful workflow automation tool that lets you connect apps, APIs, and automate tasks — no code required.",
+  "In this short tutorial, you'll learn how to use n8n with the OpenAI API to manage inventory and generate email summaries automatically.",
+  "First, set up n8n locally or on cloud and create a new workflow.",
+  "Add an HTTP Request node to fetch your inventory data from a Google Sheet, database, or API endpoint.",
+  "Next, connect an OpenAI node. Send the fetched inventory data as input and prompt OpenAI to create a summary like ‘Summarize today’s inventory status and highlight low-stock items.’",
+  "Then, add an Email node. Use the OpenAI summary output as the email body and send it to your team or manager automatically.",
+  "Finally, schedule the workflow to run daily. You’ll get AI-generated inventory summaries in your inbox — saving time and improving efficiency."
+]
+,
   },
 };
 
@@ -96,17 +106,23 @@ const BlogPost = () => {
           </span>
         </div>
 
-          {/* Title */}
-          <h1 className="text-4xl md:text-6xl premium-heading mb-8">
-            {post.title}
-          </h1>
+        {/* Title */}
+        <h1 className="text-4xl md:text-6xl premium-heading mb-8">
+          {post.title}
+        </h1>
 
-        {/* Featured Image */}
-        <div className="aspect-video glass-panel p-4 mb-12">
-          <div className="w-full h-full bg-gradient-primary rounded-lg relative overflow-hidden">
-            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjA1IiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-30" />
+        {/* Featured Image (optional) */}
+        {post.image && (
+          <div className="aspect-video glass-panel p-4 mb-12">
+            <div className="w-full h-full rounded-lg overflow-hidden relative">
+              <img
+                src={post.image}
+                alt={post.title}
+                className="w-full h-full object-cover rounded-lg"
+              />
+            </div>
           </div>
-        </div>
+        )}
 
         {/* Content */}
         <div className="prose prose-invert max-w-none">

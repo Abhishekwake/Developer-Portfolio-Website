@@ -6,27 +6,30 @@ import { Link } from "react-router-dom";
 const blogPosts = [
   {
     id: "design-systems-2024",
-    title: "Building Scalable Design Systems in 2024",
+    title: "Master Prompt Engineering in 10 Minutes",
     excerpt:
-      "Learn how to create design systems that grow with your product and team.",
-    date: "Mar 15, 2024",
+      "Prompt engineering is a must-have skill in tech. Developers, marketers, and AI enthusiasts can use it to get better, precise AI outputs. In just 10 minutes, you can learn the basics and start crafting effective prompts.",
+    date: "Mar 15, 2025",
     readTime: "8 min read",
+    image: "public/blogs/blog1.png", // 👈 Add your image here
   },
   {
     id: "react-performance",
-    title: "React Performance: Beyond the Basics",
+    title: "Start Using Notion from Now",
     excerpt:
-      "Advanced techniques for optimizing React apps and reducing bundle sizes.",
-    date: "Mar 8, 2024",
-    readTime: "12 min read",
+      "Notion is more than just a note-taking app — it’s your personal productivity hub that helps you organize your ideas, projects, and goals in one place.",
+    date: "Juky 12, 2025",
+    readTime: "7 min read",
+    image: "public/blogs/blog2.png",
   },
   {
     id: "video-marketing",
-    title: "The Art of Video Marketing in the AI Era",
+    title: "Automate Inventory Management with n8n and OpenAI API.",
     excerpt:
-      "How to leverage video content to stand out in an increasingly competitive landscape.",
-    date: "Feb 28, 2024",
+      "n8n is a powerful workflow automation tool that lets you connect apps, APIs, and automate tasks — no code required.",
+    date: "Aug 28, 2025",
     readTime: "6 min read",
+    image: "/public/blogs/blog3.png",
   },
 ];
 
@@ -59,15 +62,18 @@ export const Blog = () => {
     >
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
+          {/* Header */}
           <div className="text-center mb-20 scroll-fade-in">
             <h2 className="text-5xl md:text-7xl premium-heading mb-8">
-              From My Blog
+              Insights And Blogs
             </h2>
             <p className="text-xl text-foreground/60 max-w-3xl mx-auto font-light">
-              Thoughts on design, development, and the creative process.
+              Explore high-value ideas, tools, and innovations in design,
+              development, productivity, AI, and everything I love.
             </p>
           </div>
 
+          {/* Blog Grid */}
           <div className="grid md:grid-cols-3 gap-8">
             {blogPosts.map((post, index) => (
               <Link
@@ -77,8 +83,17 @@ export const Blog = () => {
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 {/* Blog Thumbnail */}
-                <div className="aspect-video bg-gradient-primary rounded-lg mb-4 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjA1IiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-30" />
+                <div className="aspect-video rounded-lg mb-4 relative overflow-hidden">
+                  {post.image ? (
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  ) : (
+                    <div className="w-full h-full bg-gradient-to-br from-primary/30 to-secondary/30" />
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
 
                 {/* Meta */}

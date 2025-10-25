@@ -96,7 +96,7 @@ export const Hero = () => {
           </div>
 
           {/* Heading */}
-   <h1 className="mt-16 text-6xl md:text-8xl lg:text-9xl premium-heading leading-[0.95] animate-fade-in text-white drop-shadow-[0_4px_15px_rgba(255,255,255,0.3)]">
+   <h1 className="mt-16 text-6xl md:text-8xl lg:text-9xl premium-heading leading-[0.95] animate-fade-in text-white drop-shadow-[0_4px_15px_rgba(255,255,255,0.2)]">
   Websites & Apps
   <br />
   Developer
@@ -121,27 +121,49 @@ export const Hero = () => {
             </Button>
           </div>
 
-          {/* Featured Work Showcase */}
-          <div className="mt-20 animate-fade-in">
-            <div className="glass-panel p-1 max-w-5xl mx-auto">
-              <div className="relative aspect-video rounded-2xl overflow-hidden">
-                <div className="absolute inset-0 bg-[url('/assets/overlay.svg')] opacity-20" />
+         {/* Featured Work Showcase */}
+{/* Featured Work Showcase */}
+<div className="mt-20 animate-fade-in">
+  <a
+    href="https://prompt-guru-tech.vercel.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block max-w-5xl mx-auto cursor-pointer group"
+  >
+    <div className="glass-panel p-1 relative overflow-hidden rounded-[30px] shadow-2xl transition-transform duration-500 ease-out hover:scale-105 hover:shadow-[0_25px_50px_rgba(0,0,0,0.4)]">
+      <div className="relative aspect-video rounded-[30px] overflow-hidden">
+        {/* Background overlay */}
+        <div className="absolute inset-0 bg-[url('/assets/overlay.svg')] opacity-15" />
 
-                <img
-                  src="/assets/PrompGuru.jpg"
-                  alt="Featured Work Showcase"
-                  className="w-full h-full object-cover rounded-2xl"
-                />
+        {/* Featured Work Image */}
+        <img
+          src="/assets/PrompGuru.jpg"
+          alt="Featured Work Showcase"
+          className="w-full h-full object-cover rounded-[30px] transition-transform duration-500 group-hover:scale-105"
+        />
 
-                <div className="absolute top-4 sm:top-6 md:top-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center z-10">
-                  <Sparkles className="w-16 h-16 mb-2 text-accent/75 animate-glow-pulse" />
-                  <p className="text-white/75 text-base md:text-sm font-medium text-center">
-                    Recent Work
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+        {/* Overlay content */}
+        <div className="absolute top-6 left-1/2 transform -translate-x-1/2 flex flex-col items-center z-10 pointer-events-none">
+          {/* Sparkles Icon */}
+          <Sparkles className="w-8 h-8 mb-1 text-accent/50 animate-glow-pulse transition-all duration-300 
+            sm:w-10 sm:h-10 
+            md:w-10 md:h-10 
+            hidden xs:block" 
+          />
+
+          <p className="text-white/80 text-sm sm:text-base font-medium text-center tracking-wide">
+            Recent Work
+          </p>
+          <span className="text-white/60 text-xs mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+            View Live →
+          </span>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+
         </div>
       </div>
     </section>
