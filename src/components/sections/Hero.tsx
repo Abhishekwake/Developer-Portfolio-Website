@@ -28,7 +28,7 @@ export const SplineBackground = () => {
     <div ref={containerRef} className="absolute inset-0 z-0 overflow-hidden">
       {/* 🌑 Static Background Image (Moon Glow) */}
       <img
-        src="public/assets/moon-glow-bg.jpg"
+        src="/assets/moon-glow-bg.jpg"
         alt="Moon Glow Background"
         className="absolute inset-0 w-full h-full object-cover"
         style={{
