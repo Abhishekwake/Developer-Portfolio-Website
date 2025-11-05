@@ -9,17 +9,27 @@ const projectsData = [
     stack: ["Next", "TypeScript", "Tailwind", "Express", "MongoDB", "OpenAI API"],
     demo: "https://prompt-guru-tech.vercel.app/",
     github: "https://github.com/Abhishekwake/PromptGuru.Tech",
-    image: "/assets/PrompGuru.jpg", // ✅ already correct
+    image: "/assets/PrompGuru.jpg",
+  },
+  {
+    title: "Lok8 – Stories That Shape Spaces",
+    description:
+      "For five decades, Lokmat Group has been India’s trusted voice. LOK8 extends that legacy into real estate—crafting soulful communities with integrity and vision.",
+    stack: ["React", "Tailwind", "GSAP", "Next.js", "Brand Design"],
+    demo: "https://lok-8-website.vercel.app/", // official site or placeholder
+    github: "#", // optional, since it’s a client project
+    image: "/assets/lok8.png", // add your Lok8 image to public/assets/lok8.jpg
   },
   {
     title: "HomeServ",
     description: "Home Services Marketplace, real-time tracking, and secure payments.",
-    stack: ["React.js", "Tailwind", "Supabase","Web Sockets"],
+    stack: ["React.js", "Tailwind", "Supabase", "Web Sockets"],
     demo: "https://home-serv-pezfsbfsf-tushars-projects-1bbd2003.vercel.app/",
     github: "#",
-    image: "/assets/home.png", // ✅ fixed: removed "Public/"
+    image: "/assets/home.png",
   },
 ];
+
 
 export const Projects = () => {
   const sectionRef = useRef<HTMLElement>(null);

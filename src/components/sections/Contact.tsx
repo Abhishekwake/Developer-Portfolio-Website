@@ -16,7 +16,6 @@ export const Contact = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const emailAddress = "abhishekwake111@gmail.com";
-
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
